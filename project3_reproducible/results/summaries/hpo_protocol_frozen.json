@@ -1,0 +1,73 @@
+{
+  "frozen_at_utc": "2026-10-27T13:22:36.957806+00:00",
+  "harness": "PI Agent 0.73.1",
+  "benchmark": "SkillsBench 1.1",
+  "model": "openai/gpt-4o-mini",
+  "validation_tasks": [
+    "paper-anonymizer",
+    "edit-pdf"
+  ],
+  "held_out_test_tasks": [
+    "offer-letter-generator",
+    "court-form-filling"
+  ],
+  "objective": "Maximize validation pass@1; among configurations with equal pass@1, minimize cumulative USD cost.",
+  "candidate_configs": [
+    {
+      "label": "c0_off_default",
+      "thinking": "off",
+      "tool_profile": "default",
+      "prompt_style": "default"
+    },
+    {
+      "label": "c1_off_full_verify",
+      "thinking": "off",
+      "tool_profile": "full",
+      "prompt_style": "verify"
+    },
+    {
+      "label": "c2_minimal_default_verify",
+      "thinking": "minimal",
+      "tool_profile": "default",
+      "prompt_style": "verify"
+    },
+    {
+      "label": "c3_minimal_full_verify",
+      "thinking": "minimal",
+      "tool_profile": "full",
+      "prompt_style": "verify"
+    },
+    {
+      "label": "c4_low_default_verify",
+      "thinking": "low",
+      "tool_profile": "default",
+      "prompt_style": "verify"
+    },
+    {
+      "label": "c5_low_full_verify",
+      "thinking": "low",
+      "tool_profile": "full",
+      "prompt_style": "verify"
+    }
+  ],
+  "methods": {
+    "default": {
+      "rollout_budget": 2,
+      "configuration": "DEFAULT_CONFIG"
+    },
+    "random_search": {
+      "rollout_budget": 6,
+      "selection": "sample 3 distinct configurations uniformly with seed 6203; run each on both validation tasks",
+      "seed": 6203
+    },
+    "bayesian_optimization": {
+      "rollout_budget": 6,
+      "selection": "3 sequential categorical Thompson-sampling selections; each selected configuration runs on both validation tasks"
+    },
+    "custom_cost_aware_search": {
+      "rollout_budget": 6,
+      "selection": "Stage 1: run 4 configurations on cheaper paper-anonymizer; Stage 2: promote the top 2 by pass then cost to edit-pdf"
+    }
+  },
+  "test_policy": "Held-out test tasks will run only after one final configuration is chosen."
+}

@@ -1,0 +1,5 @@
+﻿method,validation_runs,validation_pass_at_1,observed_cumulative_cost_usd,cost_note
+Default,2,1.0,0.062066,Includes one dialogue-parser pilot; do not compare this cost directly with the other methods.
+Random Search,6,1.0,0.225147,Primary method-level observed cost.
+Bayesian Optimization,6,1.0,0.242667,Categorical Thompson sampling; primary observed cost.
+Custom Cost-Aware Search,6,1.0,0.32094,Two-stage screening and promotion; primary observed cost.

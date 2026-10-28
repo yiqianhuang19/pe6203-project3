@@ -1,0 +1,43 @@
+{
+  "method": "random_search",
+  "seed": 6203,
+  "configuration_order": [
+    "c1_off_full_verify",
+    "c2_minimal_default_verify",
+    "c0_off_default"
+  ],
+  "formal_validation_tasks": [
+    "paper-anonymizer",
+    "edit-pdf"
+  ],
+  "configuration_results": [
+    {
+      "label": "c1_off_full_verify",
+      "validation_runs": 2,
+      "passes": 2,
+      "pass_at_1": 1.0,
+      "elapsed_seconds_total": 135.64,
+      "immediate_cost_estimate_usd": 0.045618
+    },
+    {
+      "label": "c2_minimal_default_verify",
+      "validation_runs": 2,
+      "passes": 2,
+      "pass_at_1": 1.0,
+      "elapsed_seconds_total": 359.29,
+      "immediate_cost_estimate_usd": 0.100837
+    },
+    {
+      "label": "c0_off_default",
+      "validation_runs": 2,
+      "passes": 2,
+      "pass_at_1": 1.0,
+      "elapsed_seconds_total": 181.95,
+      "immediate_cost_estimate_usd": 0.046724
+    }
+  ],
+  "usage_before_usd": 0.15804915,
+  "usage_after_observed_usd": 0.3831963,
+  "cumulative_cost_usd_observed": 0.225147,
+  "note": "Cumulative batch cost is the primary cost metric. Per-run immediate costs are retained only as estimates because OpenRouter usage settlement can lag."
+}

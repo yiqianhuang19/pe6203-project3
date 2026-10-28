@@ -1,0 +1,73 @@
+{
+  "selection_rule": "maximize validation pass rate; then minimize mean immediate cost estimate; then minimize mean elapsed time",
+  "validation_tasks": [
+    "paper-anonymizer",
+    "edit-pdf"
+  ],
+  "test_tasks_untouched": [
+    "offer-letter-generator",
+    "court-form-filling"
+  ],
+  "configuration_metrics": [
+    {
+      "label": "c0_off_default",
+      "runs": 6,
+      "tasks_seen": [
+        "edit-pdf",
+        "paper-anonymizer"
+      ],
+      "pass_rate": 1.0,
+      "mean_elapsed_seconds": 151.39,
+      "mean_immediate_cost_estimate_usd": 0.02001
+    },
+    {
+      "label": "c1_off_full_verify",
+      "runs": 8,
+      "tasks_seen": [
+        "edit-pdf",
+        "paper-anonymizer"
+      ],
+      "pass_rate": 1.0,
+      "mean_elapsed_seconds": 66.75,
+      "mean_immediate_cost_estimate_usd": 0.032648
+    },
+    {
+      "label": "c2_minimal_default_verify",
+      "runs": 5,
+      "tasks_seen": [
+        "edit-pdf",
+        "paper-anonymizer"
+      ],
+      "pass_rate": 1.0,
+      "mean_elapsed_seconds": 163.94,
+      "mean_immediate_cost_estimate_usd": 0.049832
+    },
+    {
+      "label": "c3_minimal_full_verify",
+      "runs": 1,
+      "tasks_seen": [
+        "paper-anonymizer"
+      ],
+      "pass_rate": 1.0,
+      "mean_elapsed_seconds": 303.18,
+      "mean_immediate_cost_estimate_usd": 0.132212
+    }
+  ],
+  "selected_configuration": {
+    "label": "c0_off_default",
+    "runs": 6,
+    "tasks_seen": [
+      "edit-pdf",
+      "paper-anonymizer"
+    ],
+    "pass_rate": 1.0,
+    "mean_elapsed_seconds": 151.39,
+    "mean_immediate_cost_estimate_usd": 0.02001
+  },
+  "frozen_final_config": {
+    "label": "final_c0_off_default",
+    "thinking": "off",
+    "tool_profile": "default",
+    "prompt_style": "default"
+  }
+}

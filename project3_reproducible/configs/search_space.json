@@ -1,0 +1,32 @@
+{
+  "harness": "PI Agent 0.73.1",
+  "benchmark": "SkillsBench v1.1",
+  "provider": "OpenRouter",
+  "model": "openai/gpt-4o-mini",
+  "validation_tasks": ["paper-anonymizer", "edit-pdf"],
+  "held_out_test_tasks": ["offer-letter-generator", "court-form-filling"],
+  "pilot_task_excluded_from_formal_validation": "dialogue-parser",
+  "random_seed": 6203,
+  "search_space": {
+    "thinking": ["off", "minimal", "low"],
+    "tool_profile": {
+      "default": "",
+      "full": "read,bash,edit,write,grep,find,ls"
+    },
+    "prompt_style": {
+      "default": "",
+      "verify": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+    }
+  },
+  "selection_rule": [
+    "maximize validation pass@1",
+    "minimize mean immediate cost estimate",
+    "minimize mean elapsed time"
+  ],
+  "frozen_final_configuration": {
+    "label": "final_c0_off_default",
+    "thinking": "off",
+    "tool_profile": "default",
+    "prompt_style": "default"
+  }
+}

@@ -1,0 +1,5 @@
+﻿label,runs,tasks_seen,pass_rate,mean_elapsed_seconds,mean_immediate_cost_estimate_usd
+c0_off_default,6,"['edit-pdf', 'paper-anonymizer']",1.0,151.39,0.02001
+c1_off_full_verify,8,"['edit-pdf', 'paper-anonymizer']",1.0,66.75,0.032648
+c2_minimal_default_verify,5,"['edit-pdf', 'paper-anonymizer']",1.0,163.94,0.049832
+c3_minimal_full_verify,1,['paper-anonymizer'],1.0,303.18,0.132212

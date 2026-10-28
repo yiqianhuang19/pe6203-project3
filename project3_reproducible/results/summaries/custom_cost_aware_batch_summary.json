@@ -1,0 +1,19 @@
+{
+  "method": "custom_cost_aware_search",
+  "stage_1_task": "paper-anonymizer",
+  "stage_1_labels": [
+    "c0_off_default",
+    "c1_off_full_verify",
+    "c2_minimal_default_verify",
+    "c3_minimal_full_verify"
+  ],
+  "stage_2_task": "edit-pdf",
+  "promoted_labels": [
+    "c0_off_default",
+    "c1_off_full_verify"
+  ],
+  "rollout_budget": 6,
+  "usage_before_usd": 0.7146096,
+  "usage_after_observed_usd": 1.0355493,
+  "cumulative_cost_usd_observed": 0.32094
+}

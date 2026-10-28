@@ -1,0 +1,17 @@
+{
+  "method": "default",
+  "tasks_run": [
+    "paper-anonymizer",
+    "dialogue-parser (pilot calibration)",
+    "edit-pdf"
+  ],
+  "formal_validation_tasks": [
+    "paper-anonymizer",
+    "edit-pdf"
+  ],
+  "formal_validation_pass_at_1": 1.0,
+  "usage_before_usd": 0.08640765,
+  "usage_after_observed_usd": 0.1484733,
+  "cumulative_cost_usd_observed": 0.062066,
+  "note": "Observed after the final baseline run. Individual usage settlement may lag; use this cumulative method-level amount in analysis."
+}

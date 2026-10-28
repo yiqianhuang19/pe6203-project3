@@ -1,0 +1,12 @@
+Project 3 analysis notes
+
+- Formal validation tasks: paper-anonymizer and edit-pdf.
+- dialogue-parser was a pilot calibration task and is not part of the formal validation score.
+- Held-out tasks: offer-letter-generator and court-form-filling.
+- The final configuration was frozen before held-out testing:
+  final_c0_off_default = thinking off, default tools, default prompt.
+- Both held-out tasks passed, giving held-out pass@1 = 1.0 (2/2).
+- OpenRouter per-run immediate cost estimates can lag settlement.
+  Use method-level observed cumulative cost as the primary cost metric.
+- The default-method cost includes a pilot run, so state this limitation in the report.
+- Small benchmark size is a limitation; do not claim broad generalization.

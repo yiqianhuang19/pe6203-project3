@@ -1,0 +1,200 @@
+{
+  "method": "bayesian_optimization_thompson_sampling",
+  "formal_validation_tasks": [
+    "paper-anonymizer",
+    "edit-pdf"
+  ],
+  "round_history": [
+    {
+      "round": 1,
+      "config_label": "c1_off_full_verify",
+      "sampled_success": 0.9807632598237012,
+      "results": [
+        {
+          "run_id": "paper-anonymizer-c1_off_full_verify-9a901601",
+          "task": "paper-anonymizer",
+          "config": {
+            "label": "c1_off_full_verify",
+            "thinking": "off",
+            "tools": "read,bash,edit,write,grep,find,ls",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 75.51,
+          "cost_usd": 0.0009,
+          "credit_before_usd": {
+            "used_usd": 0.44043045,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.44133015,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\paper-anonymizer-c1_off_full_verify-9a901601"
+        },
+        {
+          "run_id": "edit-pdf-c1_off_full_verify-98b2a1ce",
+          "task": "edit-pdf",
+          "config": {
+            "label": "c1_off_full_verify",
+            "thinking": "off",
+            "tools": "read,bash,edit,write,grep,find,ls",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 14.41,
+          "cost_usd": 0.055024,
+          "credit_before_usd": {
+            "used_usd": 0.44133015,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.49635405,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\edit-pdf-c1_off_full_verify-98b2a1ce"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "config_label": "c2_minimal_default_verify",
+      "sampled_success": 0.965539125919098,
+      "results": [
+        {
+          "run_id": "paper-anonymizer-c2_minimal_default_verify-ed9b09d1",
+          "task": "paper-anonymizer",
+          "config": {
+            "label": "c2_minimal_default_verify",
+            "thinking": "minimal",
+            "tools": "",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 153.29,
+          "cost_usd": 0.048827,
+          "credit_before_usd": {
+            "used_usd": 0.50825715,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.5570844,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\paper-anonymizer-c2_minimal_default_verify-ed9b09d1"
+        },
+        {
+          "run_id": "edit-pdf-c2_minimal_default_verify-51aaa0bc",
+          "task": "edit-pdf",
+          "config": {
+            "label": "c2_minimal_default_verify",
+            "thinking": "minimal",
+            "tools": "",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 27.5,
+          "cost_usd": 0.000397,
+          "credit_before_usd": {
+            "used_usd": 0.5570844,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.5574816,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\edit-pdf-c2_minimal_default_verify-51aaa0bc"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "config_label": "c1_off_full_verify",
+      "sampled_success": 0.9455966476703935,
+      "results": [
+        {
+          "run_id": "paper-anonymizer-c1_off_full_verify-0701c5ff",
+          "task": "paper-anonymizer",
+          "config": {
+            "label": "c1_off_full_verify",
+            "thinking": "off",
+            "tools": "read,bash,edit,write,grep,find,ls",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 99.37,
+          "cost_usd": 0.043118,
+          "credit_before_usd": {
+            "used_usd": 0.5731638,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.61628205,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\paper-anonymizer-c1_off_full_verify-0701c5ff"
+        },
+        {
+          "run_id": "edit-pdf-c1_off_full_verify-d39edccb",
+          "task": "edit-pdf",
+          "config": {
+            "label": "c1_off_full_verify",
+            "thinking": "off",
+            "tools": "read,bash,edit,write,grep,find,ls",
+            "append_system_prompt": "Complete the task independently. Inspect the required output files and run the provided verifier before finishing. Do not stop until the required deliverables exist."
+          },
+          "pass_at_1": 1,
+          "pi_exit": 0,
+          "verifier_exit": 0,
+          "elapsed_seconds": 45.98,
+          "cost_usd": 0.066816,
+          "credit_before_usd": {
+            "used_usd": 0.61628205,
+            "limit_usd": 10.0
+          },
+          "credit_after_usd": {
+            "used_usd": 0.6830979,
+            "limit_usd": 10.0
+          },
+          "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\edit-pdf-c1_off_full_verify-d39edccb"
+        }
+      ]
+    }
+  ],
+  "configuration_results": [
+    {
+      "label": "c1_off_full_verify",
+      "validation_runs": 4,
+      "passes": 4,
+      "pass_at_1": 1.0,
+      "elapsed_seconds_total": 235.27,
+      "immediate_cost_estimate_usd": 0.165858,
+      "posterior_alpha": 5,
+      "posterior_beta": 1
+    },
+    {
+      "label": "c2_minimal_default_verify",
+      "validation_runs": 2,
+      "passes": 2,
+      "pass_at_1": 1.0,
+      "elapsed_seconds_total": 180.79,
+      "immediate_cost_estimate_usd": 0.049224,
+      "posterior_alpha": 3,
+      "posterior_beta": 1
+    }
+  ],
+  "usage_before_usd": 0.44043045,
+  "usage_after_observed_usd": 0.6830979,
+  "cumulative_cost_usd_observed": 0.242667,
+  "note": "Categorical Thompson sampling with Beta-Bernoulli success posteriors. Cumulative batch cost is the primary cost metric."
+}

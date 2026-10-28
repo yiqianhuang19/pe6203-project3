@@ -1,0 +1,24 @@
+{
+  "run_id": "offer-letter-generator-final_c0_off_default-2c6f94ec",
+  "task": "offer-letter-generator",
+  "config": {
+    "label": "final_c0_off_default",
+    "thinking": "off",
+    "tools": "",
+    "append_system_prompt": ""
+  },
+  "pass_at_1": 1,
+  "pi_exit": 0,
+  "verifier_exit": 0,
+  "elapsed_seconds": 39.52,
+  "cost_usd": 0.000367,
+  "credit_before_usd": {
+    "used_usd": 1.05205455,
+    "limit_usd": 10.0
+  },
+  "credit_after_usd": {
+    "used_usd": 1.05242175,
+    "limit_usd": 10.0
+  },
+  "run_directory": "D:\\HuaweiMoveData\\Users\\86187\\Documents\\ChatGPT\\6203新\\project3_pi_hpo_runs\\offer-letter-generator-final_c0_off_default-2c6f94ec"
+}
